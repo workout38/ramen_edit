@@ -45,7 +45,7 @@ form input[type="submit"] {
 /* 共通レイアウト ================================ */
 body {
   color: #2d3133;
-  background-color: #3ecdc6;
+  background-color: #cd813e;
   margin: 0;
   min-height: 1vh;
 }
@@ -130,7 +130,7 @@ header {
   height: auto;
   min-height: 100%;
   color: white;
-  background-color: #3ecdc6;
+  background-color: #cd813e;
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
@@ -171,7 +171,7 @@ header {
 }
 
 .about-img {
-  width: 84%;
+  width: 100%;
 }
 
 /* フォーム================================ */
@@ -215,7 +215,7 @@ header {
 }
 
 .form input[type="submit"] {
-  background-color: #3ecdc6;
+  background-color: #cd813e;
   color: white;
   cursor: pointer;
   font-weight: 300;
