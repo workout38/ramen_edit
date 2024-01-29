@@ -48,6 +48,9 @@ gem "sassc-rails"
 # Use Japanese error message
 gem "rails-i18n"
 
+#RubyZip 3.0 is coming!対応
+gem 'rubyzip', '2.3.2'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

@@ -242,6 +242,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.8)
   rails-i18n
+  rubyzip (= 2.3.2)
   sassc-rails
   selenium-webdriver
   sprockets-rails
