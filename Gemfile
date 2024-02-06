@@ -51,6 +51,14 @@ gem "rails-i18n"
 #RubyZip 3.0 is coming!対応
 gem 'rubyzip', '2.3.2'
 
+#ホットペッパーAPI
+gem 'rest-client'
+
+#環境変数
+gem 'dotenv-rails'
+
+gem 'pry'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
