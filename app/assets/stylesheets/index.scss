@@ -1,0 +1,36 @@
+/* top ================================ */
+.index-restaurant {
+  padding: 60px 0 100px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  color: black;
+}
+
+
+.top-container {
+  position: relative;
+  background-image: image-url("/top.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+}
+
+.top-container h2 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+}
+
+.ranking-container {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+}

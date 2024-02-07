@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RamenMaps</title>
+    <title>todays_gohan</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,14 +13,17 @@
   <body>
       <header>
         <div class="header-logo">
-          <%= link_to("ラーメン マップ", "/") %>
+          <%= link_to("今日のごはん", "/") %>
         </div>
         <ul class="header-menus">
           <li>
             <%= link_to("ログイン", "/login") %>
           </li>
           <li>
-            <%= link_to("新規登録", "/restaurants/index") %>
+            <%= link_to("新規登録", "/signup") %>
+          </li>
+          <li>
+            <%= link_to("Myアカウント", "/accounts") %>
           </li>
         </ul>
       </header>

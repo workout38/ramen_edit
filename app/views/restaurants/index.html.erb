@@ -1,28 +1,24 @@
-<!-- app/views/restaurants/index.html.erb -->
+<div class="index-restaurant">
+  <h1>今日のごはんを検索する</h1>
 
-<h1>Restaurant List</h1>
-<h1>Restaurant List</h1>
-<h1>Restaurant List</h1>
-<h1>Restaurant List</h1>
-<h1>ラーメン店を検索する</h1>
+  <%= form_tag(restaurants_path, method: 'get') do %>
+    <%= text_field_tag 'query', params[:query] %>
+    <%= submit_tag '検索' %>
+  <% end %>
 
-<%= form_tag(restaurants_path, method: 'get') do %>
-  <%= text_field_tag 'query', params[:query] %>
-  <%= submit_tag 'Search' %>
-<% end %>
-
-<ul>
-  <div class="restaurant-list">
-    <% if @restaurants.present? %>
-      <% @restaurant_info.each do |info| %>
-        <li>検索結果</li>
-        <li>
-          <img src="<%= info[:image] %>" alt="Restaurant Image">
-          <p><%= info[:name] %></p>
-        </li>
+  <ul>
+    <div class="restaurant-list">
+      <% if @restaurants.present? %>
+      <li>検索結果</li>
+        <% @restaurant_info.each do |info| %>
+          <li>
+            <img src="<%= info[:image] %>" alt="Restaurant Image">
+            <p><%= info[:name] %></p>
+          </li>
+        <% end %>
+      <% else %>
+        <li>店舗が見つかりません</li>
       <% end %>
-    <% else %>
-      <li>店舗が見つかりません</li>
-    <% end %>
-  </div>
-</ul>
+    </div>
+  </ul>
+</div>
