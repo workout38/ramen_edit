@@ -7,7 +7,19 @@ resources :restaurants, only: [:index]
 
   get "users/index", to: "users#index"
   get "users/:id", to: "users#show"
-
   get "signup", to: "users#new"
-  post "users/create" => "users#create"
+  post "users/create", to: "users#create"
+  get "users/:id/edit", to: "users#edit"
+  post "users/:id/update" => "users#update"
+
+  get "posts/new", to: "posts#new"
+  get "posts/:id", to: "posts#show"
+  post "posts/create", to: "posts#create"
+  get "posts/:id/edit", to: "posts#edit"
+  post "posts/:id/update", to: "posts#update"
+  post "posts/:id/destroy", to: "posts#destroy"
+
+  get "login", to: "users#login_form"
+  post "login", to: "users#login"
+  post "logout", to:  "users#logout"
 end

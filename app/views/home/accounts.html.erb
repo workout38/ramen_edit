@@ -4,11 +4,17 @@
       <div class="user-right">
         <li>
           <%= link_to("Myアカウント", "users/index") %>
+        <li>
+          <%= link_to("新規投稿", "posts/new") %>
+        </li>
+        <li>
+          <%= link_to("投稿一覧", "posts/index") %>
+        </li>
+        <li>
+          <%= link_to("ログアウト", "/logout", {method: "post"}) %>
+        </li>
+        <li>戻る</li>
         </li>
       </div>
-      <li>新規投稿</li>
-      <li>投稿一覧</li>
-      <li>ログアウト</li>
-      <li>戻る</li>
     </ul>
   </div>

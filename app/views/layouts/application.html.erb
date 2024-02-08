@@ -16,15 +16,21 @@
           <%= link_to("今日のごはん", "/") %>
         </div>
         <ul class="header-menus">
+          <% if session[:user_id] %>
+            <li>
+              <%= session[:user_id] %>
+            </li>
+            <li>
+              <%= link_to("Myアカウント", "/accounts") %>
+            </li>
+          <% else %>
           <li>
             <%= link_to("ログイン", "/login") %>
           </li>
           <li>
             <%= link_to("新規登録", "/signup") %>
           </li>
-          <li>
-            <%= link_to("Myアカウント", "/accounts") %>
-          </li>
+          <% end %>
         </ul>
       </header>
 
