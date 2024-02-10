@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+
   def index
     @posts = Post.all.order(created_at: :desc)
   end
@@ -17,7 +18,7 @@ class PostsController < ApplicationController
       flash[:notice] = "投稿を作成しました"
       redirect_to("/posts/index")
     else
-      render :new, status: :unprocessable_entity
+      render("posts/new")
     end
   end
 
@@ -32,7 +33,7 @@ class PostsController < ApplicationController
       flash[:notice] = "投稿を編集しました"
       redirect_to("/posts/index")
     else
-      render :edit, status: :unprocessable_entity
+      render("posts/edit")
     end
   end
 
@@ -40,6 +41,7 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post.destroy
     flash[:notice] = "投稿を削除しました"
-    redirect_to("/posts/index")
+    redirect_to posts_path
   end
+
 end
