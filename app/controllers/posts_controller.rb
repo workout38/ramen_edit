@@ -44,7 +44,7 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
-  def def
+  def de
   end
 
 end
