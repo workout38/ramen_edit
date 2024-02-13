@@ -18,7 +18,7 @@ resources :restaurants, only: [:index]
   post "posts/create", to: "posts#create"
   get "posts/:id/edit", to: "posts#edit"
   post "posts/:id/update", to: "posts#update"
-  delete "posts/:id/destroy", to: "posts#destroy"
+  post "posts/:id/destroy", to: "posts#destroy"
 
   get "login", to: "users#login_form"
   post "login", to: "users#login"
